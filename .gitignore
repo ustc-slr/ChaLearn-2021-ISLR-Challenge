@@ -1,0 +1,15 @@
+data/AUTSL/flow/*
+data/AUTSL/jpg_face/*
+data/AUTSL/jpg_left_hand/*
+data/AUTSL/jpg_right_hand/*
+data/AUTSL/jpg_video/*
+data/AUTSL/Keypoints_2d_mmpose/*
+data/AUTSL/results_test/*
+__pycache__
+mmpose
+preprocessing
+Data_Process
+code/results
+code/weights
+code/pre_trained
+code/trash
