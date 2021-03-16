@@ -105,7 +105,7 @@ mv AUTSL_I3D_BSL_part_all.pkl results/AUTSL_I3D_BSL2_rhand_all.pkl
 ## i3d-lhand
 ## Change universal.py Line#447  /data/user/AUTSL/jpg_left_hand/
 ## L-HAND train I3D_BSL_part-AUTSL_Upper split
-mv tmp/universal_lhand.py datasets/universal.py
+cp tmp/universal_lhand.py datasets/universal.py
 CUDA_VISIBLE_DEVICES=0 python main.py --root_path ../data/AUTSL --video_path jpg_video \
     --annotation_path autsl_01_final.json --result_path results_test \
     --dataset autsl --n_finetune_classes 226 --n_classes 226 --model I3D_BSL_part \

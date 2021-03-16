@@ -6,10 +6,10 @@ data/AUTSL/jpg_video/*
 data/AUTSL/Keypoints_2d_mmpose/*
 data/AUTSL/results_test/*
 __pycache__
-mmpose
-preprocessing
-Data_Process
+# preprocessing
+# data_arrange
 code/results
 code/weights
 code/pre_trained
 code/trash
+preprocessing/data/AUTSL_raw
