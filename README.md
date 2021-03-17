@@ -1,5 +1,6 @@
 # Code for CVPR2021 ChaLearn Challenge of ISLR
 
+Our Team Ranked 3rd in [2021 ChaLearn LAP ISLR CVPR Challenge](http://chalearnlap.cvc.uab.es/challenge/43/description/). 
 
 ## 1. Run Docker
 Run the docker first and then execute all the following steps.
@@ -105,7 +106,7 @@ python preparation/1.gen_list.py
 python preparation/2.extract_first.py data/AUTSL/raw data/AUTSL/first
 ```
 
-- localize signer and crop the video. Pre-trained weights `preprocessing/preparation/weights/pose_hrnet_w48_384x288.pth` and `preprocessing/preparation/pre_data/faster_rcnn_r50_fpn_2x_coco_bbox_mAP-0.384_20200504_210434-a5d8aa15.pth` can be downloaded at [GoogleDrive]()
+- localize signer and crop the video. Pre-trained weights `preprocessing/preparation/weights/pose_hrnet_w48_384x288.pth` and `preprocessing/preparation/pre_data/faster_rcnn_r50_fpn_2x_coco_bbox_mAP-0.384_20200504_210434-a5d8aa15.pth` can be downloaded at [GoogleDrive](https://drive.google.com/drive/folders/1gS7kULCYqAd8F0z8ce456YywHhX1ILah?usp=sharing)
 ```bash
 cd preprocessing
 python preparation/3.localize_signer.py
@@ -124,7 +125,7 @@ cd preprocessing
 python preparation/5.compute_flow.py
 ```
 
-- extract keypoints with [DarkPose-Wholebody](https://github.com/open-mmlab/mmpose/tree/master/configs/wholebody/darkpose) in MMPose. Pre-trained weights of `mmpose/models/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth` and `mmpose/models/hrnet_w48_coco_wholebody_384x288_dark-f5726563_20200918.pth` can be downloaded at [GoogleDrive]()
+- extract keypoints with [DarkPose-Wholebody](https://github.com/open-mmlab/mmpose/tree/master/configs/wholebody/darkpose) in MMPose. Pre-trained weights of `mmpose/models/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth` and `mmpose/models/hrnet_w48_coco_wholebody_384x288_dark-f5726563_20200918.pth` can be downloaded at [GoogleDrive](https://drive.google.com/drive/folders/1gS7kULCYqAd8F0z8ce456YywHhX1ILah?usp=sharing)
 ```
 python Stage1_top_down_SL_pose_video_AUTSL.py \
     demo/mmdetection_cfg/faster_rcnn_r50_fpn_1x_coco.py models/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth \
@@ -140,3 +141,6 @@ python Stage4_AUTSL_json.py All_new
 python Stage8_Crop_Hand.py
 python Stage9_Crop_Face.py
 ```
+
+## 
+Hao Zhou, zhouh156(AT)mail.ustc.edu.cn
