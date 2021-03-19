@@ -1,4 +1,6 @@
 #!/bin/bash
+apt-get update
+apt-get install zip unzip
 unzip -d data/AUTSL/flow      data/AUTSL/flow/flow.zip
 unzip -d data/AUTSL/jpg_face  data/AUTSL/jpg_face/face.zip
 unzip -d data/AUTSL/jpg_left_hand   data/AUTSL/jpg_left_hand/lhand.zip

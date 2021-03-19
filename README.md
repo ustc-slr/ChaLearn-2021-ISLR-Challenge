@@ -6,7 +6,7 @@ Our Team Ranked 3rd in [2021 ChaLearn LAP ISLR CVPR Challenge](http://chalearnla
 Run the docker first and then execute all the following steps.
 ```bash
 docker pull rhythmblue/chalearn2021:v1
-docker run -it docker run -it --rm --shm-size=16G -v /xxx/ChaLearn-2021-ISLR-Challenge:/ChaLearn-2021-ISLR-Challenge rhythmblue/chalearn2021:v1
+docker run -it --rm --shm-size=16G -v /xxx/ChaLearn-2021-ISLR-Challenge:/ChaLearn-2021-ISLR-Challenge rhythmblue/chalearn2021:v1
 cd /ChaLearn-2021-ISLR-Challenge
 ```
 
