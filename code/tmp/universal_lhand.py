@@ -444,7 +444,7 @@ class Universal(data.Dataset):
         elif self.modality in ['part', 'face', 'lhand', 'rhand']:
             path = self.data[index]['video']
             split_path = path.split('/')
-            part_path = os.path.join('/data/user/AUTSL/jpg_left_hand/', split_path[-2], split_path[-1])
+            part_path = os.path.join('../data/AUTSL/jpg_left_hand/', split_path[-2], split_path[-1])
             frame_indices = [int(x.split('.')[0]) for x in sorted(os.listdir(part_path))]
 
             # frame_indices = self.data[index]['frame_indices']
